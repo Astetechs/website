@@ -1,9 +1,49 @@
-// Scroll fade-in effect
-window.addEventListener('scroll', () => {
-  document.querySelectorAll('.fade-in').forEach(el => {
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 50) {
-      el.classList.add('visible');
-    }
-  });
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | ASTETECHS</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">ASTETECHS</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="services fade-in">
+    <h1>Our Services</h1>
+    <div class="service-cards">
+      <div class="card">
+        <h2>Cloud Solutions</h2>
+        <p>Architect, migrate, and optimize cloud infrastructure for scalability and performance.</p>
+      </div>
+      <div class="card">
+        <h2>DevOps Automation</h2>
+        <p>End-to-end CI/CD automation, containerization, and infrastructure as code.</p>
+      </div>
+      <div class="card">
+        <h2>AI & Data Engineering</h2>
+        <p>Unlock insights with intelligent analytics and AI-powered systems.</p>
+      </div>
+      <div class="card">
+        <h2>Consulting & Outsourcing</h2>
+        <p>Delivering skilled teams and technical expertise for global digital projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 ASTETECHS Pvt Ltd | contact@httx.com</p>
+  </footer>
+</body>
+</html>
