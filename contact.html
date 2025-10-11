@@ -1,38 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | ASTETECHS</title>
-  <link rel="stylesheet" href="assets/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — ASTETECHS Pvt Ltd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">ASTETECHS</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">ASTETECHS<span class="dot">.</span></a>
+      <nav class="nav" id="navContact">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="btn-outline">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggleContact" aria-label="Toggle navigation">☰</button>
+    </div>
   </header>
 
-  <section class="contact fade-in">
-    <h1>Contact Us</h1>
-    <p>We’d love to collaborate with you. Reach out for project inquiries or partnerships.</p>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit" class="btn-primary">Send Message</button>
-    </form>
-  </section>
+  <main>
+    <section class="section container">
+      <h1 class="section-title">Contact Us</h1>
+      <p class="section-sub">Let’s discuss how ASTETECHS can help your organization.</p>
 
-  <footer>
-    <p>© 2025 ASTETECHS Pvt Ltd | contact@httx.com</p>
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm" onsubmit="return false;">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@company.com" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" placeholder="Tell us about your project" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn-primary" type="submit" id="sendBtn">Send Message</button>
+            <button class="btn-outline" type="reset">Reset</button>
+          </div>
+          <p class="form-note">This is a static demo form. Hook up your preferred backend or form service to capture submissions.</p>
+        </form>
+
+        <aside class="office-info">
+          <h3>Office Locations</h3>
+          <div class="office">
+            <h4>Kuala Lumpur, Malaysia</h4>
+            <p>Address line 1<br/>Address line 2<br/>Email: malaysia@astetechs.example</p>
+          </div>
+          <div class="office">
+            <h4>Islamabad, Pakistan</h4>
+            <p>Address line 1<br/>Address line 2<br/>Email: pakistan@astetechs.example</p>
+          </div>
+
+          <div class="map-placeholder">
+            <img src="images/map-placeholder.jpg" alt="Map placeholder" />
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="logo-footer">ASTETECHS<span class="dot">.</span></div>
+        <p>© 2025 ASTETECHS Pvt Ltd. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
