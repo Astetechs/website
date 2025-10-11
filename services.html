@@ -1,49 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services | ASTETECHS</title>
-  <link rel="stylesheet" href="assets/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — ASTETECHS Pvt Ltd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">ASTETECHS</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">ASTETECHS<span class="dot">.</span></a>
+      <nav class="nav" id="navServices">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="btn-outline">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggleServices" aria-label="Toggle navigation">☰</button>
+    </div>
   </header>
 
-  <section class="services fade-in">
-    <h1>Our Services</h1>
-    <div class="service-cards">
-      <div class="card">
-        <h2>Cloud Solutions</h2>
-        <p>Architect, migrate, and optimize cloud infrastructure for scalability and performance.</p>
+  <main>
+    <section class="section container">
+      <h1 class="section-title">Services</h1>
+      <p class="section-sub">Comprehensive services tailored for enterprise digital initiatives.</p>
+
+      <div class="service-detail-grid">
+        <article class="service-detail">
+          <img src="images/icons/cloud.svg" class="icon-large" alt="" />
+          <div>
+            <h2>Cloud Solutions & Architecture</h2>
+            <p>Cloud strategy, migration, cost optimization, secure multi-account landing zones and resilient architectures across AWS, Azure and GCP.</p>
+            <ul>
+              <li>Cloud strategy & assessment</li>
+              <li>Migration & replatforming</li>
+              <li>Security & compliance</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-detail">
+          <img src="images/icons/devops.svg" class="icon-large" alt="" />
+          <div>
+            <h2>DevOps & Automation</h2>
+            <p>CI/CD pipelines, Infrastructure as Code (Terraform/ARM), GitOps patterns, automated testing and observability.</p>
+            <ul>
+              <li>CI/CD & pipelines</li>
+              <li>IaC & environment automation</li>
+              <li>Monitoring & SRE practices</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-detail">
+          <img src="images/icons/modernize.svg" class="icon-large" alt="" />
+          <div>
+            <h2>Application Modernization</h2>
+            <p>Microservices, containerization, serverless architecture and platform modernization to improve velocity and reduce technical debt.</p>
+            <ul>
+              <li>Refactoring & decomposition</li>
+              <li>Container & orchestration</li>
+              <li>Performance & scaling</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-detail">
+          <img src="images/icons/managed.svg" class="icon-large" alt="" />
+          <div>
+            <h2>Managed Services & Support</h2>
+            <p>Ongoing platform management, incident handling, and SLA-driven support for mission-critical systems.</p>
+            <ul>
+              <li>24/7 operations</li>
+              <li>Incident response</li>
+              <li>Platform optimization</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-detail">
+          <img src="images/icons/outsourced.svg" class="icon-large" alt="" />
+          <div>
+            <h2>Outsourced Engineering Teams</h2>
+            <p>Remote, dedicated teams for product engineering and long-term partnership — delivered by experienced senior engineers and architects.</p>
+            <ul>
+              <li>Team augmentation</li>
+              <li>Product engineering</li>
+              <li>Managed delivery</li>
+            </ul>
+          </div>
+        </article>
       </div>
-      <div class="card">
-        <h2>DevOps Automation</h2>
-        <p>End-to-end CI/CD automation, containerization, and infrastructure as code.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="logo-footer">ASTETECHS<span class="dot">.</span></div>
+        <p>© 2025 ASTETECHS Pvt Ltd. All rights reserved.</p>
       </div>
-      <div class="card">
-        <h2>AI & Data Engineering</h2>
-        <p>Unlock insights with intelligent analytics and AI-powered systems.</p>
-      </div>
-      <div class="card">
-        <h2>Consulting & Outsourcing</h2>
-        <p>Delivering skilled teams and technical expertise for global digital projects.</p>
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
     </div>
-  </section>
-
-  <footer>
-    <p>© 2025 ASTETECHS Pvt Ltd | contact@httx.com</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
