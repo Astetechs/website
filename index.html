@@ -1,43 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ASTETECHS | Innovating with AI and Technology</title>
-  <link rel="stylesheet" href="assets/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <script defer src="assets/script.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ASTETECHS Pvt Ltd — Empowering Digital Transformation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="ASTETECHS — Cloud Solutions, DevOps, Application Modernization, Digital Transformation, and Outsourced Engineering Services." />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">ASTETECHS</div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">ASTETECHS<span class="dot">.</span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="btn-outline">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Innovating with AI and Technology</h1>
-      <p>Powering the Future of Digital Solutions for Enterprises Worldwide.</p>
-      <a href="services.html" class="btn-primary">Explore Our Services</a>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Empowering Digital Transformation Through Cloud and DevOps Excellence.</h1>
+          <p class="lead">ASTETECHS helps businesses scale through automation, modern cloud architecture, and intelligent software delivery.</p>
+          <div class="hero-cta">
+            <a href="contact.html" class="btn-primary">Get in Touch</a>
+            <a href="services.html" class="btn-secondary">Our Expertise</a>
+          </div>
+          <ul class="trust-badges">
+            <li>Global Operations</li>
+            <li>Cloud-first Mindset</li>
+            <li>DevOps-driven Delivery</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <img src="images/hero-pattern.jpg" alt="Abstract tech pattern" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="section container" id="services-preview">
+      <h2 class="section-title">What We Do</h2>
+      <p class="section-sub">Modern software and infrastructure services designed to accelerate your business.</p>
+
+      <div class="cards-grid">
+        <article class="service-card">
+          <img src="images/icons/cloud.svg" class="icon" alt="" />
+          <h3>Cloud Solutions & Architecture</h3>
+          <p>Design and implement scalable, secure cloud architectures across AWS, Azure, and GCP.</p>
+        </article>
+
+        <article class="service-card">
+          <img src="images/icons/devops.svg" class="icon" alt="" />
+          <h3>DevOps & Automation</h3>
+          <p>Automated CI/CD pipelines, infrastructure-as-code, and observability for reliable delivery.</p>
+        </article>
+
+        <article class="service-card">
+          <img src="images/icons/modernize.svg" class="icon" alt="" />
+          <h3>Application Modernization</h3>
+          <p>Refactor and replatform legacy systems into cloud-native, maintainable architectures.</p>
+        </article>
+
+        <article class="service-card">
+          <img src="images/icons/managed.svg" class="icon" alt="" />
+          <h3>Managed Services & Support</h3>
+          <p>24/7 platform operations, incident response, and SLA-driven support services.</p>
+        </article>
+
+        <article class="service-card">
+          <img src="images/icons/outsourced.svg" class="icon" alt="" />
+          <h3>Outsourced Engineering Teams</h3>
+          <p>Flexible remote teams that extend your engineering capabilities with senior talent.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Clients / Industries -->
+    <section class="section dark-section">
+      <div class="container clients-grid">
+        <div>
+          <h2 class="section-title light">Trusted by innovators</h2>
+          <p class="section-sub light">We partner with organizations across industries to deliver measurable outcomes.</p>
+          <div class="client-logos">
+            <img src="images/clients/client1.png" alt="Client 1 logo" />
+            <img src="images/clients/client2.png" alt="Client 2 logo" />
+            <img src="images/clients/client3.png" alt="Client 3 logo" />
+            <img src="images/clients/client4.png" alt="Client 4 logo" />
+            <img src="images/clients/client5.png" alt="Client 5 logo" />
+          </div>
+        </div>
+        <div class="industries">
+          <h3 class="light">Industries</h3>
+          <ul class="industry-list">
+            <li>Healthcare</li>
+            <li>Finance</li>
+            <li>Energy</li>
+            <li>Manufacturing</li>
+            <li>Retail</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Strip -->
+    <section class="cta-strip">
+      <div class="container cta-inner">
+        <div>
+          <h3>Let’s Build the Future Together</h3>
+          <p>Cloud-first strategies. DevOps-driven delivery. Real business outcomes.</p>
+        </div>
+        <a href="contact.html" class="btn-primary">Contact Sales</a>
+      </div>
+    </section>
+
+    <!-- Footer CTA (mini) -->
+    <section class="section container small-section">
+      <div class="split">
+        <div>
+          <h4>Worldwide Offices</h4>
+          <p>Kuala Lumpur, Malaysia &middot; Islamabad, Pakistan</p>
+        </div>
+        <div>
+          <a href="contact.html" class="btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="logo-footer">ASTETECHS<span class="dot">.</span></div>
+        <p>© 2025 ASTETECHS Pvt Ltd. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="social">
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="GitHub">GitHub</a>
+          <a href="#" aria-label="Twitter">Twitter</a>
+        </div>
+      </div>
     </div>
-    <!-- Replace the hero image URL below with your own -->
-    <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769" alt="AI innovation" class="hero-bg">
-  </section>
-
-  <section class="intro fade-in">
-    <h2>Empowering Digital Transformation</h2>
-    <p>At ASTETECHS, we specialize in Cloud, DevOps, and AI-driven solutions that accelerate innovation and efficiency across industries.</p>
-  </section>
-
-  <footer>
-    <p>© 2025 ASTETECHS Pvt Ltd | contact@httx.com</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
