@@ -255,7 +255,6 @@ p {
     background-color: #ffffff;
     position: relative;
     padding: 2rem;
-    margin-bottom: 9rem;
 }
 
 .hero .container {
@@ -442,7 +441,6 @@ p {
 
 /* Features Section */
 .features {
-    padding: 6rem 0;
     background-color: #ffffff;
 }
 
@@ -461,7 +459,6 @@ p {
 .section-description {
     font-size: 1.125rem;
     color: #6b7280;
-    max-width: 600px;
     margin: 0 auto;
 }
 
